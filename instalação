@@ -1,0 +1,10 @@
+instalar
+
+1. nodejs
+2. yarn
+3. babel
+
+executar no projeto
+yarn init
+yarn add @babel/cli
+yarn add @babel/preset-env
