@@ -1,3 +1,8 @@
+import { subtracao } from './funcoes';
+
+console.log('subtração');
+console.log(subtracao(5,1));
+
 // metodo estatico
 class Matematica {
 
