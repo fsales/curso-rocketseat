@@ -15,6 +15,7 @@ Curso da Rocketseat.
 5. yarn add @babel/ -Dplugin-proposal-object-rest-spread -D
 6. yarn add webpack webpack-cli -D  
 7. yarn add babel-loader -D
+8. yarn add webpack-dev-server -D
 
 ## Gitpod.io
 https://gitpod.io/#https://github.com/fsales/estudo_es6.git
