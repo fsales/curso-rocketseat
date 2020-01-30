@@ -28,9 +28,9 @@ class TodoList extends List {
 
 }
 
-const MinhaLista = TodoList();
+//const MinhaLista = TodoList();
 
-document.getElementById('novotodo').onclick = function () { MinhaLista.add('teste') };
+//document.getElementById('novotodo').onclick = function () { MinhaLista.add('teste') };
 
 
 // constante
@@ -59,7 +59,7 @@ const usuario = {
     estado: 'GO'
   }
 };
-
+/*
 console.log(usuario);
 const { nome, idade, endereco: { cidade } } = usuario;
 console.log(nome);
@@ -70,9 +70,31 @@ function mostaNome({ nome }) {
   console.log(nome);
 }
 
-console.log(mostaNome(usuario));
+console.log(mostaNome(usuario));*/
 
 // operador rest/spread - adicionar o plugin @babel/plugi-proposal-object-rest-spread
 
 // rest - pega o restos das proprieadades
-const {nome, ...resto} = usuario;
+
+const { idade, nome, ...resto } = usuario;
+console.log('rest operador');
+console.log('idade: ' + idade);
+console.log('nome: ' + nome);
+console.log('resto: ');
+console.log(resto);
+
+function multiplicacao(...params) {
+
+  return params.reduce((total, next) => total * next);
+}
+console.log(multiplicacao(1, 2));
+
+
+// spread
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+const arr3 = [...arr1, ...arr2];
+console.log(arr3);
+
+var usuario2 = {...usuario, nome: 'Rose'};
+console.log(usuario2);
