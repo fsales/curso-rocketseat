@@ -155,4 +155,6 @@ var usuario2 = _objectSpread({}, usuario, {
   nome: 'Rose'
 });
 
-console.log(usuario2);
+console.log(usuario2); // template literals
+
+console.log("meu nome \xE9 ".concat(nome)); // object short syntax

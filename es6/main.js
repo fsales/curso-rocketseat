@@ -98,3 +98,8 @@ console.log(arr3);
 
 var usuario2 = {...usuario, nome: 'Rose'};
 console.log(usuario2);
+
+// template literals
+console.log(`meu nome é ${nome}`);
+
+// object short syntax
