@@ -103,3 +103,4 @@ console.log(usuario2);
 console.log(`meu nome é ${nome}`);
 
 // object short syntax
+
