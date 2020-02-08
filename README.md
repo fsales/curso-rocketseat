@@ -16,7 +16,13 @@ Curso da Rocketseat.
 6. yarn add webpack webpack-cli -D  
 7. yarn add babel-loader -D
 8. yarn add webpack-dev-server -D
+9. yarn add @babel/plugin-transform-async-to-generator -D
+10. yarn add @babel/polyfill -D
 
 ## Gitpod.io
 https://gitpod.io/#https://github.com/fsales/estudo_es6.git
+
+## Executar projeto
+yarn dev
+localhost:8080
 

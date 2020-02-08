@@ -109,3 +109,25 @@ console.log(`meu nome é ${nome}`);
 
 // object short syntax
 
+// async / await
+const minhaPromisse = () => 
+  new Promise((resolve, reject) =>{
+    setTimeout(() => {resolve('OK'), 200});
+  });
+
+  minhaPromisse().then(response =>{
+    console.log(response);
+  });
+
+  /*async function executaPromise(){
+    const response = await minhaPromisse();
+    console.log(response);
+  }
+
+  executaPromise();*/
+  const executaPromise = async () => {
+    console.log(await minhaPromisse());
+  }
+
+  executaPromise();
+

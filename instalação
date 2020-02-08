@@ -8,3 +8,4 @@ executar no projeto
 yarn init
 yarn add @babel/cli
 yarn add @babel/preset-env
+yarn add @babel/plugin-transform-async-to-generator -D
