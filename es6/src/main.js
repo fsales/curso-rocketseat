@@ -1,7 +1,7 @@
 import { subtracao } from './funcoes';
 
 console.log('subtração');
-console.log(subtracao(5,1));
+console.log(subtracao(5, 1));
 
 // metodo estatico
 class Matematica {
@@ -96,12 +96,12 @@ console.log(multiplicacao(1, 2));
 
 
 // spread
-const arr1 = [1,2,3];
-const arr2 = [4,5,6];
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
 const arr3 = [...arr1, ...arr2];
 console.log(arr3);
 
-var usuario2 = {...usuario, nome: 'Rose'};
+var usuario2 = { ...usuario, nome: 'Rose' };
 console.log(usuario2);
 
 // template literals
@@ -110,24 +110,41 @@ console.log(`meu nome é ${nome}`);
 // object short syntax
 
 // async / await
-const minhaPromisse = () => 
-  new Promise((resolve, reject) =>{
-    setTimeout(() => {resolve('OK'), 200});
+const minhaPromisse = () =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => { resolve('OK'), 200 });
   });
 
-  minhaPromisse().then(response =>{
-    console.log(response);
-  });
+minhaPromisse().then(response => {
+  console.log(response);
+});
 
-  /*async function executaPromise(){
-    const response = await minhaPromisse();
+/*async function executaPromise(){
+  const response = await minhaPromisse();
+  console.log(response);
+}
+
+executaPromise();*/
+const executaPromise = async () => {
+  console.log(await minhaPromisse());
+}
+
+executaPromise();
+
+import axios from 'axios';
+
+class Api {
+  static async getUserInfor(userName) {
+
+    try {
+      const response = await
+        axios.get(`https://api.github.com/users/${userName}`);
+    } catch (error) {
+      console.error(error);
+    }
     console.log(response);
   }
+}
 
-  executaPromise();*/
-  const executaPromise = async () => {
-    console.log(await minhaPromisse());
-  }
-
-  executaPromise();
+Api.getUserInfor('fsales');
 
