@@ -3,5 +3,8 @@
 		{
 			"path": "/Users/fabiosales/Documents/estudo javascript/es6_rocketeseat/estudo_es6"
 		}
-	]
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
 }
