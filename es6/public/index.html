@@ -6,12 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+
+  <style>
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li {
+      clear: both;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 80px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    strong{
+      font-size: 20px;
+    }
+
+    p{
+      margin: 5px 0;
+    }
+  </style>
+
 </head>
 
 <body>
+  <form id="repo-form" action="post">
+    <input type="text" name="repository">
+    <button id="novotodo" type="submit">Adicionar</button>
+  </form>
 
-  <button id="novotodo">Adicionar</button>
-
+  <!-- <ul id="repo-list">
+    <li>
+      <img src="https://avatars0.githubusercontent.com/u/28929274?v=4" alt="Rocketseat">
+      <strong>rocketseat.com.br</strong>
+      <p>Tire a sua ideia do papel.</p>
+      <a href="#">Acessar</a>
+    </li>
+  </ul> -->
+  <ul id="repo-list"></ul>
   <script src="./bundle.js"></script>
 </body>
 
