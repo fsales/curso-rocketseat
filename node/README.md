@@ -17,3 +17,10 @@ npm run dev
      "dev": "nodemon server.js"
 
 
+4. instalar o docker
+
+5. baixar o container docker mongo
+   docker pull mongo
+6. executar o container
+   docker run --name mongodb -p 27017:27017 -d
+
