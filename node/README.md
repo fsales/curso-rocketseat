@@ -37,7 +37,14 @@ npm run dev
 11. imagem docker pausadas
     docker ps -a
 
-12 subir imagem
+12. subir imagem
   docer start <nome-imagem>
+  
+13. instalar mongoose
+
+  npm install mongoose
+
+  13. install requeri-dir
+    npm install require-dir
 
 
