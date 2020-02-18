@@ -22,7 +22,7 @@ npm run dev
 5. baixar o container docker mongo
    docker pull mongo
 6. executar o container
-   sudo docker run --name mongodb mongo -p 27017:27017 -d
+   docker run --name mongodb -p 27017:27017 -d mongo
 7. listar imagens 
   docker image ls
 
@@ -30,4 +30,14 @@ npm run dev
     docker ps
 9. remover todas imagens
   docker system prune -a
+
+10. client mongodb
+  https://robomongo.org/download
+
+11. imagem docker pausadas
+    docker ps -a
+
+12 subir imagem
+  docer start <nome-imagem>
+
 
