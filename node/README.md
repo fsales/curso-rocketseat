@@ -38,7 +38,7 @@ npm run dev
     docker ps -a
 
 12. subir imagem
-  docer start <nome-imagem>
+  docker start <nome-imagem>
   
 13. instalar mongoose
 
