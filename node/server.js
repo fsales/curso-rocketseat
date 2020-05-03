@@ -10,20 +10,8 @@ mongoose.connect('mongodb://localhost:27017/nodeapi', { useNewUrlParser: true, u
 
 requireDir('./src/models');
 
-// testar mongodb
-const Product = mongoose.model('Product');
-
-
-
-// primeira rota
-app.get('/', (req, res) => {
-  Product.create({
-    title: 'React',
-    description: 'Build native',
-    url: 'http://github.com/facebook/react-native'
-  });
-  return  res.send('helo');
-});
+// configurando rotas
+app.use('/api', require('./src/routes'));
 
 
 // porta

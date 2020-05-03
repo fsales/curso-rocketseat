@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    container_name: mongodb-rocketseat
+    #environment:
+        #MONGO_INITDB_ROOT_USERNAME: admin
+        #MONGO_INITDB_ROOT_PASSWORD: admin
+    ports:
+        - "27017:27017"
+    #volumes:
+     #   - volumes/MongoDB:/data/db
+    networks:
+      - mongo-docker-network
+networks: 
+    mongo-docker-network:
+      driver: bridge
