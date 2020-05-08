@@ -10,8 +10,8 @@ services:
         #MONGO_INITDB_ROOT_PASSWORD: admin
     ports:
         - "27017:27017"
-    #volumes:
-     #   - volumes/MongoDB:/data/db
+    volumes:
+      - ./dbdata:/data/db
     networks:
       - mongo-docker-network
 networks: 
