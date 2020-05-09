@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const requireDir = require('require-dir');
 
@@ -7,6 +8,9 @@ const app = express();
 
 // permitir o envio de dados no formato de json
 app.use(express.json());
+
+// cors
+app.use(cors());
 
 // iniciando mongodb
 mongoose.connect('mongodb://localhost:27017/nodeapi', { useNewUrlParser: true, useUnifiedTopology: true });
