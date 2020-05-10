@@ -21,3 +21,8 @@ Curso da Rocketseat.
 ```sh
   $ yarn start
 ```
+
+3. instalar biblioteca axios (utilizado para fazer a requisição com a API)
+```sh
+  $ yarn add axios
+```
