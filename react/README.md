@@ -26,3 +26,8 @@ Curso da Rocketseat.
 ```sh
   $ yarn add axios
 ```
+
+3. instalar biblioteca navegação
+```sh
+  $ yarn add react-router-dom
+```
